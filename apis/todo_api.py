@@ -1,6 +1,9 @@
 import requests
+import os 
+from dotenv import load_dotenv
 
-BASE_URL = "http://127.0.0.1:8000/"
+load_dotenv()   # loads the env variables
+BASE_URL = os.getenv("BASE_URL")
 
 def get_todos():
     response = requests.get(f"{BASE_URL}/todos")

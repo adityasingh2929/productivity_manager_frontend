@@ -1,9 +1,12 @@
 import requests
-import os 
-from dotenv import load_dotenv
+# import os 
+# from dotenv import load_dotenv
 
-load_dotenv()   # loads the env variables
-BASE_URL = os.getenv("BASE_URL")
+# load_dotenv()   # loads the env variables
+# BASE_URL = os.getenv("BASE_URL")
+
+# hardcoding the base url as its fine for now.
+BASE_URL = "https://productivity-manager-backend-ltmr.onrender.com/"
 
 def get_todos():
     response = requests.get(f"{BASE_URL}/todos")

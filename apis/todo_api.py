@@ -6,7 +6,7 @@ import requests
 # BASE_URL = os.getenv("BASE_URL")
 
 # hardcoding the base url as its fine for now.
-BASE_URL = "https://productivity-manager-backend-ltmr.onrender.com/"
+BASE_URL = "https://productivity-manager-backend-ltmr.onrender.com"
 
 def get_todos():
     response = requests.get(f"{BASE_URL}/todos")

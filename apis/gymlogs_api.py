@@ -1,6 +1,6 @@
 import requests
 
-BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = "https://productivity-manager-backend-ltmr.onrender.com"
 
 def create_week():
     response = requests.post(url=f"{BASE_URL}/gym/weeks")
